@@ -28,6 +28,17 @@ foreach ($request_json['events'] as $event)
 			}
 			if($text == "พิกัดอัตราภาษีสรรพสามิต"){
 				$reply_message = mySQL_selectAll('http://bot.kantit.com/json_select_users.php');
+			}else if($text == "แสดงรายชื่อผู้เข้ารับการอบรมหลักสูตร Chatbot AI") ||
+				$text == "แสดงรายชื่อผู้เข้ารับการอบรม") ||
+				$text == "แสดงรายชื่อผู้เข้ารับการอบรม") ||
+				$text == "แสดงรายชื่อผู้เข้าอบรม") ||
+				$text == "แสดงรายชื่อผู้อบรม") ||
+				$text == "รายชื่อผู้เข้ารับการอบรม") ||
+				$text == "รายชื่อผู้เข้าอบรม") ||
+				$text == "รายชื่อผู้อบรม") ||
+				$text == "ขอรายชื่อผู้เข้ารับการอบรม") ||
+				$text == "ขอรายชื่อผู้อบรม") ||	{
+ 				$reply_message = "http://www.kantit.com/download/excise.jpg";
 			}else if($text == "ขายสุรา ยาสูบ และไพ่"){
  				$reply_message = "http://www.kantit.com/download/excise.jpg";
 			}else if($text == "อัตราภาษีสรรพสามิตรถยนต์"){
