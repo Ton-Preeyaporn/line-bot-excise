@@ -37,7 +37,7 @@ foreach ($request_json['events'] as $event)
 				$text == "รายชื่อผู้เข้าอบรม") ||
 				$text == "รายชื่อผู้อบรม") ||
 				$text == "ขอรายชื่อผู้เข้ารับการอบรม") ||
-				$text == "ขอรายชื่อผู้อบรม") ||	{
+				$text == "ขอรายชื่อผู้อบรม") ||{
  				$reply_message = "http://www.kantit.com/download/excise.jpg";
 			}else if($text == "ขายสุรา ยาสูบ และไพ่"){
  				$reply_message = "http://www.kantit.com/download/excise.jpg";
