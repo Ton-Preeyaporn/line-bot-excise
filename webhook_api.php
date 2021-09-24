@@ -18,7 +18,7 @@ foreach ($request_json['events'] as $event)
 			
 			if($text == "@บอท" || $texts[0] == "@บอท"){
 				$reply_message .= "ฉันมีบริการให้คุณสั่งได้ ดังนี้...\n";
-				$reply_message .= "พิมพ์ว่า \"ขายสุรายาสูบและไพ่\"\n";
+				$reply_message .= "พิมพ์ว่า \"ขายสุรา ยาสูบ และไพ่\"\n";
 				$reply_message .= "พิมพ์ว่า \"พิกัดอัตราภาษีสรรพสามิต\"\n";
 				$reply_message .= "พิมพ์ว่า \"อัตราภาษีสรรพสามิตรถยนต์\"\n";
 				$reply_message .= "พิมพ์ว่า \"ขั้นตอนการขอใบอนุญาตขายสุรา\"\n";
@@ -27,7 +27,7 @@ foreach ($request_json['events'] as $event)
 			}
 			if($text == "พิกัดอัตราภาษีสรรพสามิต"){
 				$reply_message = mySQL_selectAll('http://bot.kantit.com/json_select_users.php');
-			}else if($text == "ขายสุรายาสูบและไพ่"){
+			}else if($text == "ขายสุรา ยาสูบ และไพ่"){
  				$reply_message = "http://www.kantit.com/download/excise.jpg";
 			}else if($text == "อัตราภาษีสรรพสามิตรถยนต์"){
 				$reply_message = mySQL_selectAll('http://bot.kantit.com/json_select_users.php?sid='.$texts[1]);
